@@ -30,7 +30,24 @@
             <img src="imagens/images.jpg" alt="">
             <img src="imagens/Untitled-design-6-768x768.jpg" alt="" style="height: 120px;">
         </div>
-        <div class="Play"></div>
+        <div class="Play">
+            <h2 id="current-title">Nenhuma música selecionada</h2>
+
+            <audio id="audio-player" hidden></audio>
+
+            <div class="controls">
+                <button onclick="prevMusic()">⏮️</button>
+                <button onclick="togglePlay()">▶️/⏸️</button>
+                <button onclick="nextMusic()">⏭️</button>
+            </div>
+
+            <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" />
+
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <ul id="music-list"></ul>
+            </div>
+        </div>
         <div class="Aside">
             <div class="asideConteudo">
                 <div class="asideTop">
@@ -94,7 +111,7 @@
             <div class="listaEsquerda">
                 <ul>
                     <li>
-    
+
                         <div>
                             <img src="imagens/images (4).jpg" alt="">
                         </div>
@@ -102,15 +119,13 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
-    
+
                     <li>
-    
+
                         <div>
                             <img src="imagens/bbb5f475d6c128a42c52ddc9137aa576.jpg" alt="">
                         </div>
@@ -118,15 +133,13 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
-    
+
                     <li>
-    
+
                         <div>
                             <img src="imagens/images (5).jpg" alt="">
                         </div>
@@ -134,20 +147,18 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
-    
+
                 </ul>
             </div>
 
             <div class="listaDireita">
                 <ul>
                     <li>
-    
+
                         <div>
                             <img src="imagens/images (5).jpg" alt="">
                         </div>
@@ -155,14 +166,12 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
                     <li>
-    
+
                         <div>
                             <img src="imagens/550x550bb.jpg" alt="">
                         </div>
@@ -170,14 +179,12 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
                     <li>
-    
+
                         <div>
                             <img src="imagens/images (6).jpg" alt="">
                         </div>
@@ -185,17 +192,16 @@
                             <h5>Lorem, ipsum dolor.</h5>
                             <span>Lorem, ipsum.</span>
                         </div>
-                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
-                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
-                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt="" style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
                         <span style="margin-right: 5px;">3:00</span>
                     </li>
                 </ul>
             </div>
-           
+
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
