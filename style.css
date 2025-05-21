@@ -1,460 +1,168 @@
-<<<<<<< HEAD
 * {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 230px 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr 1fr 0.5fr;
-  gap: 0;
-}
-
-.container > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Header {
-  grid-area: 1 / 2 / 2 / 4;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.Aside {
-  grid-area: 1 / 1 / 5 / 2;
-  background-color: gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.conteudoCima {
-  grid-area: 2 / 2 / 3 / 4;
-  background-color: rgb(31, 30, 30);
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.albumMusicas {
-  grid-area: 3 / 2 / 4 / 4;
-  background-color: rgb(59, 58, 58);
-}
-
-.ListaMusicas {
-  grid-area: 4 / 2 / 5 / 4;
-  background-color: rgb(82, 81, 81);
-}
-
-.Play {
-  grid-area: 5 / 1 / 6 / 4;
-  background-color: red;
-}
-
-.player {
-  background: #222;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-.asideConteudo {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.asideTop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.asideTop img {
-  width: 25px;
-  height: 25px;
-}
-
-.asideTop span {
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 5px;
-}
-
-.menuAside {
-  width: 100%;
-  margin-top: 15px;
-}
-
-.menuAside ul {
-  list-style: none;
-  margin-left: 30px;
-}
-
-.menuAside li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-}
-
-.menuAside img {
-  width: 20px;
-  height: 20px;
-  display: block;
-  /* Remove espaçamento extra abaixo da imagem */
-}
-
-.menuAside a {
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.menuAside p {
-  font-weight: bolder;
-  font-size: 16px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.asideMeio {
-  margin-top: 25px;
-}
-
-.asideBot {
-  margin-top: 25px;
-}
-
-.caixa {
-  position: relative;
-  width: 500px;
-  margin-left: 80px;
-}
-
-.caixa input {
-  width: 100%;
-  padding: 10px 10px 10px 35px;
-  height: 30px;
-  border-radius: 5px;
-  border: 3px solid #000000;
-  font-size: 16px;
-}
-
-.caixa img {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  pointer-events: none;
-  /* para que o clique vá no input e não no ícone */
-}
-
-.perfil {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-right: 80px;
-}
-
-.perfil img {
-  width: 30px;
-  height: auto;
-  cursor: pointer;
-}
-
-.conteudoCima img {
-  width: 110px;
-  height: auto;
-  margin-left: 20px;
-}
-
-.conteudoCima span {
-  font-weight: bolder;
-  font-size: 60px;
-}
-
-.albumMusicas {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.albumMusicas img {
-  width: 150px;
-  height: 120px;
-  border-radius: 10px;
-}
-
-.ListaMusicas {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.ListaMusicas ul {
-  list-style: none;
-}
-
-.ListaMusicas li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.ListaMusicas h5 {
-  color: white;
-}
-.ListaMusicas span {
-  color: white;
-  font-size: 12px;
-}
-
-.ListaMusicas img {
-  width: 40px;
-  height: 40px;
-}
-
-body {
-  font-family: sans-serif;
-  background-color: #111;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
-}
-
-#play {
-  background-color: #222;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 400px;
-  margin: auto;
-}
-
-.controls button {
-  font-size: 24px;
-  margin: 10px;
-  padding: 10px;
-  border: none;
-  background: #444;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.controls button:hover {
-  background: #666;
-}
-
-#volume-control {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.playlist ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.playlist li {
-  background: #333;
-  margin: 5px 0;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.playlist li:hover {
-  background: #555;
-}
-=======
-    * {
     margin: 0;
     padding: 0;
-    }
-
-    html,
-    body {
+  }
+  
+  html,
+  body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    }
-
-    .container {
+  }
+  
+  .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 230px 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 1fr 0.5fr;
     gap: 0;
-    }
-
-    .container > * {
+  }
+  
+  .container > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
-
-    .Header {
+  }
+  
+  .Header {
     grid-area: 1 / 2 / 2 / 4;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    }
-
-    .Aside {
+  }
+  
+  .Aside {
     grid-area: 1 / 1 / 5 / 2;
     background-color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    }
-
-    .conteudoCima {
+  }
+  
+  .conteudoCima {
     grid-area: 2 / 2 / 3 / 4;
     background-color: rgb(31, 30, 30);
     color: white;
     display: flex;
     align-items: center;
-    }
-
-    .albumMusicas {
+  }
+  
+  .albumMusicas {
     grid-area: 3 / 2 / 4 / 4;
     background-color: rgb(59, 58, 58);
-    }
-
-    .ListaMusicas {
+  }
+  
+  .ListaMusicas {
     grid-area: 4 / 2 / 5 / 4;
     background-color: rgb(82, 81, 81);
-    }
-
-    .play {
+  }
+  
+  .play {
     grid-area: 5 / 1 / 6 / 4;
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 7px;
-    }
-
-    .player {
+  }
+  
+  .player {
     background: #222;
     padding: 20px;
     width: 100%;
     text-align: center;
-    }
-
-    .asideConteudo {
+  }
+  
+  .asideConteudo {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-
-    .asideTop {
+  }
+  
+  .asideTop {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 15px;
-    }
-
-    .asideTop img {
+  }
+  
+  .asideTop img {
     width: 25px;
     height: 25px;
-    }
-
-    .asideTop span {
+  }
+  
+  .asideTop span {
     color: black;
     font-weight: bold;
     font-size: 20px;
     margin-left: 5px;
-    }
-
-    .menuAside {
+  }
+  
+  .menuAside {
     width: 100%;
     margin-top: 15px;
-    }
-
-    .menuAside ul {
+  }
+  
+  .menuAside ul {
     list-style: none;
     margin-left: 30px;
-    }
-
-    .menuAside li {
+  }
+  
+  .menuAside li {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 10px;
-    }
-
-    .menuAside img {
+  }
+  
+  .menuAside img {
     width: 20px;
     height: 20px;
     display: block;
     /* Remove espaçamento extra abaixo da imagem */
-    }
-
-    .menuAside a {
+  }
+  
+  .menuAside a {
     font-size: 16px;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    }
-
-    .menuAside p {
+  }
+  
+  .menuAside p {
     font-weight: bolder;
     font-size: 16px;
     margin-left: 30px;
     margin-bottom: 10px;
-    }
-
-    .asideMeio {
+  }
+  
+  .asideMeio {
     margin-top: 25px;
-    }
-
-    .asideBot {
+  }
+  
+  .asideBot {
     margin-top: 25px;
-    }
-
-    .caixa {
+  }
+  
+  .caixa {
     position: relative;
     width: 500px;
     margin-left: 80px;
-    }
-
-    .caixa input {
+  }
+  
+  .caixa input {
     width: 100%;
     padding: 10px 10px 10px 35px;
     height: 30px;
     border-radius: 5px;
     border: 3px solid #000000;
     font-size: 16px;
-    }
-
-    .caixa img {
+  }
+  
+  .caixa img {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -462,103 +170,102 @@ body {
     width: 18px;
     height: 18px;
     pointer-events: none;
-    /* para que o clique vá no input e não no ícone */
-    }
-
-    .perfil {
+  }
+  
+  .perfil {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-right: 80px;
-    }
-
-    .perfil img {
+  }
+  
+  .perfil img {
     width: 30px;
     height: auto;
     cursor: pointer;
-    }
-
-    .conteudoCima img {
+  }
+  
+  .conteudoCima img {
     width: 110px;
     height: auto;
     margin-left: 20px;
-    }
-
-    .conteudoCima span {
+  }
+  
+  .conteudoCima span {
     font-weight: bolder;
     font-size: 60px;
-    }
-
-    .albumMusicas {
+  }
+  
+  .albumMusicas {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    }
-
-    .albumMusicas img {
+  }
+  
+  .albumMusicas img {
     width: 150px;
     height: 120px;
     border-radius: 10px;
-    }
-
-    .ListaMusicas {
+  }
+  
+  .ListaMusicas {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    }
-
-    .ListaMusicas ul {
+  }
+  
+  .ListaMusicas ul {
     list-style: none;
-    }
-
-    .ListaMusicas li {
+  }
+  
+  .ListaMusicas li {
     display: flex;
     align-items: center;
     gap: 10px;
-    }
-
-    .ListaMusicas h5 {
+  }
+  
+  .ListaMusicas h5 {
     color: white;
-    }
-    .ListaMusicas span {
+  }
+  .ListaMusicas span {
     color: white;
     font-size: 12px;
-    }
-
-    .ListaMusicas img {
+  }
+  
+  .ListaMusicas img {
     width: 40px;
     height: 40px;
-    }
-
-    .content{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .btns button{
-        background-color: black;
-        width: 50px;
-        height: auto;
-    }
-
-    #progress-bar {
-        width: 90%;
-        height: 6px;
-        background: #ddd;
-        border-radius: 3px;
-        appearance: none;
+  }
+  
+  .content{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+  }
+  
+  .btns button{
+      background-color: black;
+      width: 50px;
+      height: auto;
+  }
+  
+  #progress-bar {
+      width: 90%;
+      height: 6px;
+      background: #ddd;
+      border-radius: 3px;
+      appearance: none;
     }
 
     .btns img{
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: auto;
     }
-
-
-
-
-
-
->>>>>>> 472c19d (atualizando js)
+  
+  
+  
+  
+  
+  
+  
