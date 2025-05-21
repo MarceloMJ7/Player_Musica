@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -204,4 +205,226 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Header">
+            <div class="caixa">
+                <input type="search" placeholder="Artistas, Músicas e Podcast">
+                <img src="imagens/lupa.png" alt="Ícone de busca">
+            </div>
+            <div class="perfil">
+                <img src="imagens/icons8-conta-de-teste-48.png" alt="">
+                <span>Nome Usuário</span>
+            </div>
+        </div>
+        <div class="conteudoCima">
+            <span>Novo lançamento da semana</span>
+            <img src="imagens/550x550bb.jpg" alt="" style="border-radius: 10px;">
+        </div>
+        <div class="albumMusicas">
+            <img src="imagens/images (1).jpg" alt="">
+            <img src="imagens/images (2).jpg" alt="">
+            <img src="imagens/images.jpg" alt="">
+            <img src="imagens/Untitled-design-6-768x768.jpg" alt="" style="height: 120px;">
+        </div>
+        <div class="play">
+
+            <h2 id="current-title" style="color: white; font-size: 17px;">Nenhuma música selecionada</h2>
+
+            <audio id="audio-player" hidden></audio>
+
+            <div class="btns">
+                <button onclick="prevMusic()"><img src="imagens/seta-para-a-esquerda.png" alt=""></button>
+                <button onclick="togglePlay()"><img src="imagens/botao-play.png" alt=""></button>
+                <button onclick="nextMusic()"><img src="imagens/seta-direita.png" alt=""></button>
+            </div>
+
+
+            <input type="range" id="progress-bar" value="0" min="0" step="1">
+
+        </div>
+
+        <div class="Aside">
+            <div class="asideConteudo">
+                <div class="asideTop">
+                    <img src="imagens/Design sem nome.png" alt="">
+                    <span>Player Música</span>
+                </div>
+                <div class="menuAside">
+                    <p>DISCOVER</p>
+                    <ul>
+                        <li>
+                            <img src="imagens/botao-de-inicio.png" alt="">
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <img src="imagens/pop.png" alt="">
+                            <a href="">Gêneros</a>
+                        </li>
+                        <li>
+                            <img src="imagens/albuns-de-musica.png" alt="">
+                            <a href="">Álbuns</a>
+                        </li>
+                        <li>
+                            <img src="imagens/evento-eleitoral-em-um-calendario-com-o-simbolo-de-estrela.png" alt="">
+                            <a href="">Eventos</a>
+                        </li>
+                    </ul>
+
+                    <div class="asideMeio">
+                        <p>LIBRARY</p>
+                        <ul>
+                            <li>
+                                <img src="imagens/recente.png" alt="">
+                                <a href="">Recente</a>
+                            </li>
+                            <li>
+                                <img src="imagens/coracao.png" alt="">
+                                <a href="">Favoritas</a>
+                            </li>
+                            <li>
+                                <img src="imagens/pasta.png" alt="">
+                                <a href="">Favoritas</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="asideBot">
+                        <p>YOUR PLAYLIST</p>
+                        <ul>
+                            <li>
+                                <img src="imagens/adicionar.png" alt="">
+                                <a href="">Recente</a>
+                            </li>
+                        </ul>
+                        <p>Melhores do Ano</p>
+                        <p>Minhas PlayList</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ListaMusicas">
+            <div class="listaEsquerda">
+                <ul>
+                    <li>
+
+                        <div>
+                            <img src="imagens/images (4).jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img id="play-btn" src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+
+                        <audio id="meu-audio" src="músicas/Linkin Park -  Numb (Lyrics).mp3"></audio>
+                    </li>
+
+
+                    <li>
+
+                        <div>
+                            <img src="imagens/bbb5f475d6c128a42c52ddc9137aa576.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+                    </li>
+
+                    <li>
+
+                        <div>
+                            <img src="imagens/images (5).jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="listaDireita">
+                <ul>
+                    <li>
+
+                        <div>
+                            <img src="imagens/images (5).jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+                    </li>
+                    <li>
+
+                        <div>
+                            <img src="imagens/550x550bb.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+                    </li>
+                    <li>
+
+                        <div>
+                            <img src="imagens/images (6).jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <img src="imagens/play-button_icon-icons.com_53922.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <img src="imagens/3643770-favorite-heart-like-likes-love-loved_113432.png" alt=""
+                            style="cursor: pointer; width: 20px; height: 20px; margin-left: 5px ;">
+                        <span style="margin-right: 5px;">3:00</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+>>>>>>> 472c19d (atualizando js)
 </html>
